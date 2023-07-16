@@ -1,0 +1,16 @@
+[Unit]
+Description=HyperHDR service
+After=graphical.target
+
+[Service]
+Type=forking
+ExecStart=/bin/sh -c "exec sh /storage/.kodi/addons/service.hyperhdr/bin/hyperhdr.start"
+ExecReload=/bin/kill -HUP $MAINPID
+PIDFile=/run/hyperhdr.pid
+TimeoutStopSec=2
+Restart=always
+RestartSec=10
+StartLimitInterval=0
+
+[Install]
+WantedBy=default.target
