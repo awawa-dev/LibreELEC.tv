@@ -1,0 +1,13 @@
+[Unit]
+Description=HyperHDR power management
+Before=sleep.target
+StopWhenUnneeded=yes
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=-/usr/bin/curl http://127.0.0.1:8090/json-rpc?request=%7B%22command%22:%22componentstate%22,%22componentstate%22:%7B%22component%22:%22ALL%22,%22state%22:false%7D%7D
+ExecStop=-/usr/bin/curl http://127.0.0.1:8090/json-rpc?request=%7B%22command%22:%22componentstate%22,%22componentstate%22:%7B%22component%22:%22ALL%22,%22state%22:true%7D%7D
+
+[Install]
+WantedBy=sleep.target
