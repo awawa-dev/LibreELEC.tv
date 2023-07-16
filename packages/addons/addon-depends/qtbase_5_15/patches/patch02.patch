@@ -1,0 +1,9 @@
+--- a/qtbase/src/corelib/tools/qoffsetstringarray_p.h
++++ b/qtbase/src/corelib/tools/qoffsetstringarray_p.h
+@@ -53,6 +53,7 @@
+ 
+ #include "private/qglobal_p.h"
+ 
++#include <limits>
+ #include <tuple>
+ #include <array>
