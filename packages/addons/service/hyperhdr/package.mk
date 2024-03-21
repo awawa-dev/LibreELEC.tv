@@ -2,8 +2,8 @@
 # Copyright (C) 2018-present Team CoreELEC (https://coreelec.org)
 
 PKG_NAME="hyperhdr"
-PKG_VERSION="558c7e03d7da0d52653cd2fe68d96e3634fae227"
-PKG_REV="201"
+PKG_VERSION="6d5eff19d777b31a1969fc030e5e202b9c88a8cd"
+PKG_REV="202"
 PKG_LICENSE="MiT"
 PKG_SITE="https://github.com/awawa-dev/HyperHDR"
 PKG_URL="https://github.com/awawa-dev/HyperHDR.git"
